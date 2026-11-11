@@ -71,3 +71,8 @@ h1{
     margin-bottom: 1rem;
     /* an rem is always relative to the root font size, or the font size set on your html element, so 1rem = 16px */
 }
+
+h3{
+    font-size: 1.6em;
+    padding: 0.5em;
+}

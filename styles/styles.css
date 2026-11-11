@@ -138,3 +138,58 @@ section:nth-of-type(4) article dive:nth-of-type(2){
         FLEXBOX NAV EXAMPLE
 *******************************/
 
+nav ul{
+    display:flex;
+
+    /* for text based nav, distribute the content evenly... 
+    justify-content: space-evenly; */
+
+    flex-wrap: wrap;
+}
+
+nav li{
+    /* ...and make the list items grow to fill the space */
+    flex-grow: 1;
+
+    /* make the list items display flex so we can center the links inside of them */
+    background-color: #8bc7df;
+    display:flex;
+}
+
+nav ul a{
+   flex-grow: 1;
+   padding:10px;
+   background-color: #8bc7df;
+   text-align: center;
+}
+
+
+nav ul a:hover{
+    background-color: #fff;
+}
+
+/*******************************
+        MEDIA QUERIES
+*******************************/
+
+@media screen and (max-width: 640px){
+    /* this media query will apply to any screen that is 640px wide or smaller */
+
+    .flexer{
+        display:flex;   
+        
+        /* gap can be used to put space between flexed elements */
+        gap: 1em;
+    }
+
+    main{
+        flex-grow:3;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    aside{
+        flex-grow:1;
+    }
+}

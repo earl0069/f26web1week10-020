@@ -106,3 +106,10 @@ section:nth-of-type(2) article{
     /* flex-direction lets you control which way the elements are laid out. stack - whether horizontal or vertical - is the default, but you can also set it to row-reverse or column-reverse */
     flex-direction: column-reverse;
 }
+
+section:nth-of-type(3) article{
+    display:flex;
+
+    /* justify-content lets you control how the elements are spaced out along the main axis (the direction of the flex-direction) */
+    justify-content: center;
+}

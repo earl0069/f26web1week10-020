@@ -68,5 +68,6 @@ h1{
     /* ems are relative to the current font-size - default is 16px, so 2.2em = 35.2px */
     padding: 0.5em;
     /* because the font size of this element is 2.2 em, setting padding with ems will be relative to that font size, so 0.5em = 17.6px */
-    
+    margin-bottom: 1rem;
+    /* an rem is always relative to the root font size, or the font size set on your html element, so 1rem = 16px */
 }

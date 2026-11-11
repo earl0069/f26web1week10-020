@@ -133,3 +133,8 @@ section:nth-of-type(4) article dive:nth-of-type(2){
     /* tell the second div to grow twice as much as the other divs in the flex container */
     flex-grow: 2;
 }
+
+/*******************************
+        FLEXBOX NAV EXAMPLE
+*******************************/
+

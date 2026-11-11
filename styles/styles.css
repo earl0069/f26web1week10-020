@@ -111,5 +111,25 @@ section:nth-of-type(3) article{
     display:flex;
 
     /* justify-content lets you control how the elements are spaced out along the main axis (the direction of the flex-direction) */
-    justify-content: center;
+    /* flex-start is the default, but you can also set it to center, space-between, space-around, or flex-end, based on user's language */
+    /* space-between will put the first element at the start of the main axis, the last element at the end of the main axis, and evenly space out all other elements in between */
+    /* space-around will put equal space around each element, so the first and last elements will have half the space on the outside of them as the space between each element */
+    /* space-evenly will put equal space between each element, including the first and last elements */
+    justify-content: space-evenly;
+}
+
+section:nth-of-type(4) article{
+    display:flex;
+
+   /* you can tell the flex container to wrap its items onto multiple lines if they don't fit on one line by using the flex-wrap property. By default, flex-wrap is set to nowrap, but you can also set it to wrap or wrap-reverse */
+    flex-wrap: wrap;
+}
+
+section:nth-of-type(4) article div{
+    flex-grow: 1;
+}
+
+section:nth-of-type(4) article dive:nth-of-type(2){
+    /* tell the second div to grow twice as much as the other divs in the flex container */
+    flex-grow: 2;
 }

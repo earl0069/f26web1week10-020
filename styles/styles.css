@@ -83,3 +83,15 @@ article div{
     border: 2px solid #000;
     background-color: #fff;
 }
+
+
+/*****************************
+    FLEXBOX STYLES
+*****************************/
+
+section:nth-of-type(1) article{
+    /* nth-of-type selects the first article element that matches the type in the section */
+
+    /*display:flex, by default, makes things sit next to each other */
+    display:flex;
+}
